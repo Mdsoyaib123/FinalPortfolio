@@ -1,3 +1,4 @@
+import About from "./Component/About/About";
 import Banner from "./Component/Banner/Banner";
 import Education from "./Component/Education/Education";
 import Footer from "./Component/Footer/Footer";
@@ -8,16 +9,13 @@ import Skills from "./Component/Skills/Skills";
 const App = () => {
   return (
     <>
-      <Navbar></Navbar>
-    
-        <Banner></Banner>
-        <div className="skillAndProjects">
-        <Skills></Skills>
-        <Projects></Projects>
-        <Education></Education>
-        <Footer></Footer>
-        </div>
-      
+      <Navbar></Navbar> 
+      <Banner></Banner>
+      <About></About>
+      <Skills></Skills>
+      <Projects></Projects>
+      <Education></Education>
+      <Footer></Footer>
     </>
   );
 };

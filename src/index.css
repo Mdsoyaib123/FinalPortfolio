@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+
+.logo{
+    font-family: 'Great Vibes', cursive;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
