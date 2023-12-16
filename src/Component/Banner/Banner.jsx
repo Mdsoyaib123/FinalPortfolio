@@ -8,13 +8,13 @@ import { FaFacebook, FaLinkedin } from "react-icons/fa";
 const Banner = () => {
   return (
     <div
-      name="about"
-      className="h-screen bg-gradient-to-b from-black via-black to-gray-800"
+      name="banner"
+      className="h-full md:h-screen  bg-gradient-to-b from-black via-black to-gray-800"
       id="about"
     >
-      <div className="flex flex-col  justify-between items-center max-w-6xl mx-auto h-full  md:flex-row  ">
+      <div className="flex flex-col  justify-between items-center max-w-6xl mx-auto h-full   md:flex-row  ">
         <div className="flex items-center gap-10 flex-1   my-10 md:my-10">
-          <div className="hidden md:flex flex-col gap-7">
+          <div className="hidden md:flex flex-col gap-7 px-6">
             <a href="https://www.facebook.com/mdsoyaib.hossain.77">
               <FaFacebook
                 className="cursor-pointer hover:bg-blue-800 rounded-3xl"
@@ -35,8 +35,8 @@ const Banner = () => {
             </a>
           </div>
           <div className="space-y-8">
-            <h1 className="text-6xl font-bold"> Hello there  (;&#129306;</h1>
-            <h2 className="flex items-center gap-2 text-2xl  sm:text-4xl  font-bold">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold"> Hi , I am Soyaib Hossain </h1>
+            <h2 className="flex items-center gap-2 text-xl md:text-2xl lg:text-3xl   font-bold">
               I'm a_{" "}
               <span className="text-green  ">
                 <Typewriter
@@ -54,18 +54,18 @@ const Banner = () => {
                 />
               </span>
             </h2>
-            <p className="max-w-md text-xl text-gray-400">
+            <p className="max-w-md text-xl  text-gray-400">
             Motivated and Enthusiastic Web Developer. <br></br>
               Seeking Opportunities to Grow and Learn.
             </p>
             <div className="flex  gap-5">
               <button className="group flex items-center gap-2 w-fit px-6 py-3 my-2 rounded-md bg-gradient-to-t from-cyan-500 to-blue-500 cursor-pointer">
-                Portfolio{""}
+                Contact{""}
                 <span className="group-hover:rotate-90 duration-300">
                   <FaArrowRightLong></FaArrowRightLong>
                 </span>
               </button>
-            <a href="https://drive.google.com/file/d/1XHJEVaYTdLfhq8qz1AkeOC6NDq6uAntz/view?usp=drive_link">  <button className=" w-fit px-6 rounded-md py-3 my-2 bg-gradient-to-t from-cyan-500 to-blue-500"> Resume </button></a>
+           
             </div>
           </div>
         </div>

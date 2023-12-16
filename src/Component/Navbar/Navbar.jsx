@@ -28,20 +28,22 @@ const Navbar = () => {
   ];
 
   return (
-    <div className=" text-white w-full h-20 bg-black sticky top-0 z-10">
+    <div className=" text-white w-full h-24 bg-black sticky top-0 z-10">
       <div className="flex justify-between py-6  max-w-6xl mx-auto  ">
         <div className="">
-          <h1 className="text-5xl logo">Soyaib </h1>
+          <Link to={'/'}  className="cursor-pointer "><h1 className="text-5xl logo">Soyaib </h1></Link>
         </div>
-        <ul className="hidden md:flex ">
+        <ul className="hidden md:flex items-center gap-2">
           {links.map((link) => (
-            <li 
-              key={link.id} 
+            <li
+              key={link.id}
               className="text-gray-400 cursor-pointer px-4 hover:scale-105 capitalize font-medium duration-200 "
             >
               {link.link}
             </li>
+            
           ))}
+           <a href="https://drive.google.com/file/d/1XHJEVaYTdLfhq8qz1AkeOC6NDq6uAntz/view?usp=drive_link" target="blank">  <button className=" w-fit px-6 rounded-md py-2 my-2 bg-gradient-to-t from-cyan-500 to-blue-500"> Resume </button></a>
         </ul>
         <div
           onClick={() => setNav(!nav)}
@@ -50,7 +52,7 @@ const Navbar = () => {
           {nav ? <FaTimes size={30}></FaTimes> : <FaBars size={30}></FaBars>}
         </div>
         {nav && (
-          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full py-4 bg-gradient-to-b from-black to-gray-800 text-gray-400 ">
+          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full py- bg-gradient-to-b from-black to-gray-800 text-gray-400 ">
             {links.map((link) => (
               <li
                 key={link.id}
@@ -59,6 +61,13 @@ const Navbar = () => {
                 {link.link}
               </li>
             ))}
+            <a href="https://drive.google.com/file/d/1XHJEVaYTdLfhq8qz1AkeOC6NDq6uAntz/view?usp=drive_link" target="blank">
+              {" "}
+              <button className=" w-fit px-6 text-white rounded-md py-3 my-2 bg-gradient-to-t from-cyan-500 to-blue-500">
+                {" "}
+                Resume{" "}
+              </button>
+            </a>
           </ul>
         )}
       </div>
