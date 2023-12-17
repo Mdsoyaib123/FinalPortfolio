@@ -1,10 +1,12 @@
 import autoprefixer from "autoprefixer";
-import sourav from "../../assets/sourav.jpg";
+import sourav1 from "../../assets/sourav1.jpg";
+import soyaib from '../../assets/soyaib.jpg'
+import sourav from '../../assets/sourav.jpg'
 import { FaArrowRightLong } from "react-icons/fa6";
 import Typewriter from "typewriter-effect";
 import { IoLogoGithub } from "react-icons/io5";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
-
+import './Banner.css'
 const Banner = () => {
   return (
     <div
@@ -69,8 +71,8 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1">
-          <img className="rounded-2xl  mx-auto w-2/3  " src={sourav} alt="" />
+        <div className="flex-1" >
+          <img id="img" className="rounded-2xl  mx-auto  border-gray-400 border-4 " src={sourav} alt="" />
         </div>
       </div>
     </div>
