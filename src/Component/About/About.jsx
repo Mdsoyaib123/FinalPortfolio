@@ -18,6 +18,7 @@ const About = () => {
           solutions. I am also in the learning zone of Typescript and NextJs.</p>
         
         </div>
+        
       </div>
     </div>
   );

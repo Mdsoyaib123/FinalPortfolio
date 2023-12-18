@@ -1,7 +1,9 @@
 import './Projects.css'
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
-
+import blood from '../../assets/screencapture-blood-donation-a244f-web-app-2023-12-16-23_16_38.png'
+import sofiya from '../../assets/Sofiya hotel.png'
+import bistro from '../../assets/Bistro boss.png'
 const Projects = () => {
   return (
     <div
@@ -19,7 +21,7 @@ const Projects = () => {
               <div className='port-image flex justify-center items-center '>
               <img
                 className=" object-cover"
-                src="/src/assets/screencapture-blood-donation-a244f-web-app-2023-12-16-23_16_38.png"
+                src={blood}
                 alt=""
               />
               </div>
@@ -38,7 +40,7 @@ const Projects = () => {
               <div className='port-image'>
               <img
                 className="h-56 object-cover"
-                src="/src/assets/Sofiya hotel.png"
+                src={sofiya}
                 alt=""
               />
               </div>
@@ -57,7 +59,7 @@ const Projects = () => {
               <div className='port-image'>
               <img
                 className="h-56 object-cover "
-                src="/src/assets/Bistro boss.png"
+                src={bistro}
                 alt=""
               />
               </div>

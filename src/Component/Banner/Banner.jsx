@@ -7,6 +7,7 @@ import Typewriter from "typewriter-effect";
 import { IoLogoGithub } from "react-icons/io5";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import './Banner.css'
+import { HashLink, NavHashLink } from "react-router-hash-link";
 const Banner = () => {
   return (
     <div
@@ -61,12 +62,12 @@ const Banner = () => {
               Seeking Opportunities to Grow and Learn.
             </p>
             <div className="flex  gap-5">
-              <button className="group flex items-center gap-2 w-fit px-6 py-3 my-2 rounded-md bg-gradient-to-t from-cyan-500 to-blue-500 cursor-pointer">
+              <NavHashLink to='/#Contact' smooth duration={500}  className="group flex items-center gap-2 w-fit px-6 py-3 my-2 rounded-md bg-gradient-to-t from-cyan-500 to-blue-500 cursor-pointer">
                 Contact{""}
                 <span className="group-hover:rotate-90 duration-300">
                   <FaArrowRightLong></FaArrowRightLong>
                 </span>
-              </button>
+              </NavHashLink>
            
             </div>
           </div>

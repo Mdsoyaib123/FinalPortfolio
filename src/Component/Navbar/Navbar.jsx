@@ -44,7 +44,7 @@ const Navbar = () => {
               key={link.id}
               className="text-gray-400 cursor-pointer px-4 hover:scale-105 capitalize font-medium duration-200 "
             >
-              <NavHashLink to={`/#${link.link}`} smooth duration={500}>{link.link}</NavHashLink>
+              <NavHashLink to={`/#${link.link}`} smooth duration={500} activeStyle={{ color: 'red' }}>{link.link}</NavHashLink>
             </li>
             
           ))}
