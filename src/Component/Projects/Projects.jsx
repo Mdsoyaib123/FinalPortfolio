@@ -5,7 +5,7 @@ import { FaSquareGithub } from "react-icons/fa6";
 const Projects = () => {
   return (
     <div
-      name="projects"
+      id="Projects"
       className="bg-gradient-to-b from-gray-800 via-black to-black w-full h-full text-white md:h-screen px-10 xl:px-0"
     >
       <div className="max-w-6xl mx-auto h-screen py-16" id="projects">

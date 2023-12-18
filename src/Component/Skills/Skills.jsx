@@ -105,7 +105,7 @@ const Skills = () => {
         },
       ];
   return (
-    <div name='skill' className="bg-gradient-to-b from-black via-black to-gray-800  ">
+    <div id='Skill' className="bg-gradient-to-b from-black via-black to-gray-800  ">
       <div className="px-16 md:px-6 lg:px-0 max-w-6xl mx-auto h-full py-5 lg:py-0 xl:py-0 " id="skills">
         <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold inline border-b-4  ">Skills</h1>
         <div className="py-10  ">

@@ -1,29 +1,34 @@
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink, HashLink as Link, NavHashLink } from "react-router-hash-link";
 import { FaBars, FaBeer, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+
   const links = [
     {
-      id: 1,
-      link: "About",
+      id:1,
+      link: 'Home'
     },
     {
       id: 2,
-      link: "Skill",
+      link: "About",
     },
     {
       id: 3,
-      link: "Projects",
+      link: "Skill",
     },
     {
       id: 4,
-      link: "Education ",
+      link: "Projects",
     },
+    // {
+    //   id: 5,
+    //   link: "Education ",
+    // },
     {
       id: 5,
-      link: "Contact ",
+      link: "Contact",
     },
   ];
 
@@ -39,7 +44,7 @@ const Navbar = () => {
               key={link.id}
               className="text-gray-400 cursor-pointer px-4 hover:scale-105 capitalize font-medium duration-200 "
             >
-              {link.link}
+              <NavHashLink to={`/#${link.link}`} smooth duration={500}>{link.link}</NavHashLink>
             </li>
             
           ))}

@@ -10,9 +10,9 @@ import './Banner.css'
 const Banner = () => {
   return (
     <div
-      name="banner"
+      id="Home"
       className="h-full md:h-screen  bg-gradient-to-b from-black via-black to-gray-800"
-      id="about"
+      
     >
       <div className="flex flex-col  justify-between items-center max-w-6xl mx-auto h-full   md:flex-row  ">
         <div className="flex items-center gap-10 flex-1   my-10 md:my-10">
