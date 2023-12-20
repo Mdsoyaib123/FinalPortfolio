@@ -44,11 +44,12 @@ const Navbar = () => {
               key={link.id}
               className="text-gray-400 cursor-pointer px-4 hover:scale-105 capitalize font-medium duration-200 "
             >
-              <NavHashLink to={`/#${link.link}`} smooth duration={500} activeStyle={{ color: 'red' }}>{link.link}</NavHashLink>
+              <NavHashLink to={`/#${link.link}`} smooth duration={500} >{link.link}</NavHashLink>
             </li>
             
           ))}
-           <a href="https://drive.google.com/file/d/1XHJEVaYTdLfhq8qz1AkeOC6NDq6uAntz/view?usp=drive_link" target="blank">  <button className=" w-fit px-6 rounded-md py-2 my-2 bg-gradient-to-t from-cyan-500 to-blue-500"> Resume </button></a>
+           <a href="https://drive.google.com/file/d/1XHJEVaYTdLfhq8qz1AkeOC6NDq6uAntz/view?usp=drive_link" target="_blank">   <button className=" w-fit px-6 rounded-md py-2 my-2 bg-gradient-to-t from-cyan-500 to-blue-500"> Resume </button></a>
+           
         </ul>
         <div
           onClick={() => setNav(!nav)}
