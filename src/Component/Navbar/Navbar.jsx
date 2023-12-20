@@ -1,14 +1,14 @@
 import { HashLink, HashLink as Link, NavHashLink } from "react-router-hash-link";
 import { FaBars, FaBeer, FaTimes } from "react-icons/fa";
 import { useState } from "react";
-
+import './Navbar.css'
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   const links = [
     {
       id:1,
-      link: 'Home'
+      link: 'Hero'
     },
     {
       id: 2,
@@ -33,10 +33,10 @@ const Navbar = () => {
   ];
 
   return (
-    <div className=" text-white w-full h-24 bg-black sticky top-0 z-10">
+    <div className=" text-white w-full h-24 bg-black sticky top-0 z-10 px-3 md:px-0">
       <div className="flex justify-between py-6  max-w-6xl mx-auto  ">
         <div className="">
-          <Link to={'/'}  className="cursor-pointer "><h1 className="text-5xl logo">Soyaib </h1></Link>
+          <Link to={'/#Hero'}  className="cursor-pointer "><h1 className="text-5xl logo">Soyaib </h1></Link>
         </div>
         <ul className="hidden md:flex items-center gap-2">
           {links.map((link) => (
@@ -44,7 +44,7 @@ const Navbar = () => {
               key={link.id}
               className="text-gray-400 cursor-pointer px-4 hover:scale-105 capitalize font-medium duration-200 "
             >
-              <NavHashLink to={`/#${link.link}`} smooth duration={500} >{link.link}</NavHashLink>
+              <NavHashLink to={`/#${link.link}`}  smooth duration={500} >{link.link}</NavHashLink>
             </li>
             
           ))}
@@ -60,12 +60,13 @@ const Navbar = () => {
         {nav && (
           <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full py- bg-gradient-to-b from-black to-gray-800 text-gray-400 ">
             {links.map((link) => (
-              <li
+              <NavHashLink 
+              to={`/#${link.link}`} smooth duration={500}
                 key={link.id}
-                className="px-4 py-4 text-4xl  cursor-pointer capitalize "
+                className="px-4 py-2 hover:underline text-xl  cursor-pointer capitalize "
               >
                 {link.link}
-              </li>
+              </NavHashLink>
             ))}
             <a href="https://drive.google.com/file/d/1XHJEVaYTdLfhq8qz1AkeOC6NDq6uAntz/view?usp=drive_link" target="blank">
               {" "}

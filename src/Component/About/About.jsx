@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div id='About' className="py-8 bg-gradient-to-b from-gray-800 to-black text-white w-full h-full md:h-screen px-1 md:px-6">
-      <div className="px-10 md:px-0 max-w-6xl mx-auto h-full">
+      <div className="px-3 md:px-0 max-w-6xl mx-auto h-full">
         <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl  font-bold inline border-b-4 ">About</h1>
         <div className="space-y-4">
         <p className="text-lg md:text-xl mt-20">

@@ -1,0 +1,14 @@
+.social a:hover{
+ font-weight: bold;
+}
+.social a{
+    font-weight: bold;
+}
+.version p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+.version p{
+    font-weight: bold;
+}

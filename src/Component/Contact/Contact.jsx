@@ -28,15 +28,15 @@ const Contact = () => {
   return (
     <div
       id="Contact"
-      className="bg-gradient-to-b from-black via-black to-gray-800 w-full  text-white px-10 xl:px-0"
+      className="bg-gradient-to-b from-black via-black to-gray-800 w-full  text-white px-3 xl:px-0"
     >
       <Toaster></Toaster>
       <div className="max-w-6xl mx-auto">
         <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold inline border-b-4  ">
           Contact
         </h1>
-        <div className="flex justify-center items-center  py-16">
-          <div className="w-1/2 flex-1  space-y-4">
+        <div className=" flex justify-center items-center  py-16 px- md:px-0">
+          <div className="w-1/2 hidden md:flex flex-col flex-1  space-y-4">
             <p className="flex items-center gap-2">
               <MdEmail size={30} className="text-blue-400"></MdEmail>
               <span className="hover:text-red-500 cursor-pointer">

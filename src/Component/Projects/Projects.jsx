@@ -8,15 +8,15 @@ const Projects = () => {
   return (
     <div
       id="Projects"
-      className="bg-gradient-to-b from-gray-800 via-black to-black w-full h-full text-white md:h-screen px-10 xl:px-0"
+      className="bg-gradient-to-b from-gray-800 via-black to-black w-full   text-white px-3 md:px-6 xl:px-0" 
     >
-      <div className="max-w-6xl mx-auto h-screen py-16" id="projects">
+      <div className="max-w-6xl mx-auto h-full  py-16 " id="projects">
         <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold inline border-b-4  ">
           Projects
         </h1>
 
-        <div className="py-20">
-          <div className="grid grid-cols-1 md:grid-cols- 2 lg:grid-cols-3 justify-center items-center gap-12 lg:gap-6 ">
+        <div className="py-20  ">
+          <div className="grid grid-cols-1 md:grid-cols- 2 lg:grid-cols-3 justify-center items-center gap-12 lg:gap-6 px- md:px-0">
             <div className='port-box'>
               <div className='port-image flex justify-center items-center '>
               <img

@@ -105,19 +105,19 @@ const Skills = () => {
         },
       ];
   return (
-    <div id='Skill' className="bg-gradient-to-b from-black via-black to-gray-800  ">
-      <div className="px-16 md:px-6 lg:px-0 max-w-6xl mx-auto h-full py-5 lg:py-0 xl:py-0 " id="skills">
+    <div id='Skill' className="bg-gradient-to-b from-black via-black to-gray-800 "> 
+      <div className="px-3 md:px-6 lg:px-0 max-w-6xl mx-auto h-full py-5 lg:py-0 xl:py-0 " id="skills">
         <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold inline border-b-4  ">Skills</h1>
         <div className="py-10  ">
           <div className="flex flex-col lg:flex  justify-center ">
            
-            <div className=" grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-10 px-10 xl:px-0 mb-4 md:mb-0 my-10">
-              {skills.map((skill) => (
-                <div className="border rounded-2xl border-blue-600 shadow-blue-600 w-full px-4 py-5 mb-5 lg:mb-0">
+            <div className=" grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-10  md:px-0 xl:px-0 mb-4 md:mb-0 my-10"> 
+              {skills.map((skill,index) => (
+                <div key={index} className="border rounded-2xl border-blue-600 shadow-blue-600 w-full px-4 py-5 mb-5 lg:mb-0">
                   <h2 className="text-center mb-6 text-xl md:text-3xl text-gray-400 font-bold">{skill.title}</h2>
                   <ul className="flex justify-center gap-10 flex-wrap  ">
                     {skill.skills.map((item) => (
-                      <li className=" md:flex items-center  flex-wrap border px-4 py-2 rounded-md gap-2 hover:">
+                      <li key={item.name} className=" flex items-center   flex-wrap border px-2 md:px-4 py-2 rounded-md gap-2 hover:">
                         <img className="w-5 mx-auto" src={item.image} />
                         {item.name}
                       </li>

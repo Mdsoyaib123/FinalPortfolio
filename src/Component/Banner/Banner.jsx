@@ -11,26 +11,26 @@ import { HashLink, NavHashLink } from "react-router-hash-link";
 const Banner = () => {
   return (
     <div
-      id="Home"
-      className="h-full md:h-screen  bg-gradient-to-b from-black via-black to-gray-800"
+      id="Hero"
+      className="h-full md:h-screen  bg-gradient-to-b from-black via-black to-gray-800 px-3 md:px-0"
       
     >
-      <div className="flex flex-col  justify-between items-center max-w-6xl mx-auto h-full   md:flex-row  ">
+      <div className="flex flex-col-reverse  justify-between items-center max-w-6xl mx-auto h-full   md:flex-row  ">
         <div className="flex items-center gap-10 flex-1   my-10 md:my-10">
           <div className="hidden md:flex flex-col gap-7 px-6">
-            <a href="https://www.facebook.com/mdsoyaib.hossain.77">
+            <a  href="https://www.facebook.com/mdsoyaib.hossain.77" target="_blank">
               <FaFacebook
                 className="cursor-pointer hover:bg-blue-800 rounded-3xl"
                 size={25}
               ></FaFacebook>
             </a>
-            <a href="https://www.linkedin.com/in/md-soyaib-hossain-9b75a92a0">
+            <a href="https://www.linkedin.com/in/md-soyaib-hossain-9b75a92a0" target="_blank">
               <FaLinkedin
                 className="cursor-pointer hover:bg-blue-800 rounded-3xl"
                 size={25}
               ></FaLinkedin>
             </a>
-            <a href="https://github.com/Mdsoyaib123">
+            <a href="https://github.com/Mdsoyaib123" target="_blank">
               <IoLogoGithub
                 className="cursor-pointer hover:bg-blue-800 rounded-3xl"
                 size={25}
@@ -73,7 +73,7 @@ const Banner = () => {
           </div>
         </div>
         <div className="flex-1" >
-          <img id="img" className="rounded-2xl  mx-auto  border-gray-400 border-4 " src={sourav} alt="" />
+          <img id="img" className="rounded-2xl  mx-auto  border-gray-400 border-4 w-[250px] md:w-[350px] h-[250px] md:h-[350px]" src={sourav} alt="" />
         </div>
       </div>
     </div>
