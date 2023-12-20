@@ -48,7 +48,7 @@ const Navbar = () => {
             </li>
             
           ))}
-           <a href="https://drive.google.com/file/d/1XHJEVaYTdLfhq8qz1AkeOC6NDq6uAntz/view?usp=drive_link" target="_blank">   <button className=" w-fit px-6 rounded-md py-2 my-2 bg-gradient-to-t from-cyan-500 to-blue-500"> Resume </button></a>
+           <a href="https://drive.google.com/file/d/19bVStzjsqLoGFFH6DKoZ41UXGMUTxzO7/view?usp=sharing" target="_blank">   <button className=" w-fit px-6 rounded-md py-2 my-2 bg-gradient-to-t from-cyan-500 to-blue-500"> Resume </button></a>
            
         </ul>
         <div
