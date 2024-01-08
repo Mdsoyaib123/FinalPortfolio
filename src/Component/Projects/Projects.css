@@ -1,4 +1,4 @@
-.port-box{
+/* .port-box{
     position: relative;
     border-radius: 15px;
     overflow: hidden;
@@ -49,4 +49,6 @@
 }
 .port-box:hover .port-image img{
     transform: scale(1.1);
-}
+} */
+
+

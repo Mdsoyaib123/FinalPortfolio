@@ -33,7 +33,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className=" text-white w-full h-24 bg-black sticky top-0 z-10 px-3 md:px-0">
+    <div className=" text-white w-full h-24 bg-black sticky top-0 z-10 px-3 md:px-0  ">
       <div className="flex justify-between py-6  max-w-6xl mx-auto  ">
         <div className="">
           <Link to={'/#Hero'}  className="cursor-pointer "><h1 className="text-5xl logo">Soyaib </h1></Link>

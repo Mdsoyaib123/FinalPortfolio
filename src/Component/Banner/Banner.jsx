@@ -1,6 +1,5 @@
 import autoprefixer from "autoprefixer";
-import sourav1 from "../../assets/sourav1.jpg";
-import soyaib from '../../assets/soyaib.jpg'
+
 import sourav from '../../assets/sourav.jpg'
 import { FaArrowRightLong } from "react-icons/fa6";
 import Typewriter from "typewriter-effect";
