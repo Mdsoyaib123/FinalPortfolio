@@ -13,8 +13,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form.current)
-
     emailjs.sendForm('service_nqtf3mk', 'template_b35el9n', form.current, '9aMyJzchMZxwvTHT7')
       .then((result) => {
           console.log(result.text);

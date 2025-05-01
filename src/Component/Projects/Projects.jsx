@@ -8,7 +8,54 @@ import bistro from "../../assets/Bistro boss.png";
 import blood1 from "../../assets/blood1.png";
 import Sofiya1 from "../../assets/Sofiya1.png";
 import brand1 from "../../assets/Brand1.png";
-import { Link } from "react-router-dom";
+
+const projectsData = [
+  {
+    title: "Sofiya Hotel",
+    subtitle: "Room Booking Website",
+    image: "Sofiya1",
+    features: [
+      "This is a MERN Stack Room Booking website",
+      "Implement Login and Register system using Firebase Authentication",
+      "User can book rooms and update or cancel bookings",
+      "Technology: React, React Router, Tailwind, MongoDB, Express.js, Node.js, Private Route, Firebase Authentication, JWT",
+    ],
+    links: {
+      live: "https://the-hotel-room.web.app",
+      client: "https://github.com/Mdsoyaib123/Sofiya-Hotel",
+      server: "https://github.com/Mdsoyaib123/Sofiya-Hotel-Server",
+    },
+    images: "blood1",
+  },
+  {
+    title: "Blood Donation Website",
+    description:
+      "A full-stack Blood Donation platform enabling users to register/login (including Google authentication) and participate as donors or volunteers.",
+    features: [
+      "Role-based dashboards for Admins, Users, and Volunteers.",
+      "Admins can block/unblock users and manage platform activity.",
+      "Google authentication and custom account creation.",
+      "Private routes and protected dashboard access.",
+    ],
+    techStack: [
+      "React",
+      "React Router",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Firebase Authentication",
+      "JWT",
+    ],
+    links: {
+      live: "https://blood-donation-a244f.web.app",
+      client: "https://github.com/Mdsoyaib123/Blood-Donation",
+      server: "https://github.com/Mdsoyaib123/Blood-Donation-Server",
+    },
+    images: "blood1",
+  },
+];
+
 const Projects = () => {
   return (
     <div

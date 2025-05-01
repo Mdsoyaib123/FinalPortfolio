@@ -5,10 +5,15 @@ import "./index.css";
 import toast, { Toaster } from "react-hot-toast";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ProjectDetails from "./Component/projectDetails/ProjectDetails.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+  },
+  {
+    path: "/project-details",
+    element: <ProjectDetails></ProjectDetails>,
   },
 ]);
 
