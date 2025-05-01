@@ -11,7 +11,7 @@ const Banner = () => {
   return (
     <div
       id="Hero"
-      className="h-full md:h-screen  bg-gradient-to-b from-black via-black to-gray-800 px-3 md:px-0"
+      className="h-full md:h-screen  bg-gradient-to-b from-black via-black to-gray-800 px-3 md:px-0 "
       
     >
       <div className="flex flex-col-reverse  justify-between items-center max-w-6xl mx-auto h-full   md:flex-row  ">
