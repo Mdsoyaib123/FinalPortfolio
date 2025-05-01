@@ -48,7 +48,7 @@ const Navbar = () => {
             </li>
             
           ))}
-           <a href="https://drive.google.com/file/d/1_RLQiOVoJBEQaJC_ok_Ih7J1_ubtz9yT/view?usp=sharing" target="_blank">   <button className=" w-fit px-6 rounded-md py-2 my-2 bg-gradient-to-t from-cyan-500 to-blue-500"> Resume </button></a>
+           <a href="https://drive.google.com/file/d/1_RLQiOVoJBEQaJC_ok_Ih7J1_ubtz9yT/view?usp=sharing" target="_blank">   <button className=" w-fit px-6 rounded-md py-2 my-2 bg-blue-500"> Resume </button></a>
            
         </ul>
         <div
@@ -70,9 +70,9 @@ const Navbar = () => {
             ))}
             <a href="https://drive.google.com/file/d/1_RLQiOVoJBEQaJC_ok_Ih7J1_ubtz9yT/view?usp=sharing" target="blank">
               {" "}
-              <button className=" w-fit px-6 text-white rounded-md py-3 my-2 bg-gradient-to-t from-cyan-500 to-blue-500">
-                {" "}
-                Resume{" "}
+              <button className=" w-fit px-6 text-white rounded-md py-3 my-2 bg-blue-500">
+              
+                Resume 
               </button>
             </a>
           </ul>
