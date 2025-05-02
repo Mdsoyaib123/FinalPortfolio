@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/button";
-import React from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button"; // Adjust based on your setup
 
 const ProjectCard = ({ data }) => {
   return (
@@ -10,40 +9,43 @@ const ProjectCard = ({ data }) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.2 }}
-      className="shadow-lg shadow-slate-600 rounded-lg overflow-hidden max-w-full"
+      className="rounded-xl overflow-hidden shadow-xl bg-gray-900 border border-gray-800 hover:shadow-2xl transition duration-300 max-w-full"
     >
-      {/* Image Container */}
-      <div
-        key={data.title}
-        className="relative w-full h-64 sm:h-72 md:h-80 lg:h-[350px] aspect-video rounded-t-lg overflow-hidden group cursor-pointer"
-      >
-        {/* Image with hover zoom */}
+      {/* Image Section */}
+      <div className="relative group aspect-video">
         <img
           src={data?.images[0]}
-          alt="Card"
-          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          alt={data.title}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
 
-        {/* Hover Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-6 py-4 space-y-2 text-gray-400">
-          <h1 className="text-lg sm:text-xl font-bold text-center">{data.description}</h1>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center text-center px-4">
+          <h2 className="text-white text-lg sm:text-2xl font-semibold mb-2">
+            {data.title}
+          </h2>
+          <p className="text-gray-300 text-sm sm:text-base mb-4 line-clamp-3">
+            {data.description}
+          </p>
           <Link to={`/project-details/${data.id}`}>
-            <Button className="text-white bg-blue-600 text-base sm:text-lg hover:scale-105 transition-transform duration-300">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg text-sm sm:text-base">
               View Project
             </Button>
           </Link>
         </div>
       </div>
 
-      {/* Text Content */}
+      {/* Content Section */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
-        className="px-4 py-3 sm:py-4 space-y-1 sm:space-y-1"
+        className="p-4 bg-gray-950"
       >
-        <h1 className="text-lg sm:text-xl font-bold">{data.title}</h1>
-        <p className="text-sm sm:text-base text-gray-400">{data.subtitle}</p>
+        <h3 className="text-white text-lg sm:text-xl font-bold mb-1">
+          {data.title}
+        </h3>
+        <p className="text-gray-400 text-sm">{data.subtitle}</p>
       </motion.div>
     </motion.div>
   );

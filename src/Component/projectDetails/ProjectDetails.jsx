@@ -16,81 +16,92 @@ const ProjectDetails = () => {
   return (
     <div className="">
       <Navbar></Navbar>
-      <div className="bg-gradient-to-b from-gray-800 via-black to-black  h-full text-white px-3 md:px-6 xl:px-0">
-        <div className="max-w-6xl  mx-auto p-4   pt-10 ">
-          {/* Image Slider */}
-          <div className="w-full">
-            <Swiper
-              modules={[Navigation, Pagination, Autoplay]}
-              navigation
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 1500, disableOnInteraction: false }}
-              className="rounded-2xl shadow-lg"
+      <div className="bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white min-h-screen px-4 md:px-8 py-10">
+  <div className="max-w-6xl mx-auto">
+    {/* Image Slider */}
+    <div className="w-full mb-10 rounded-xl overflow-hidden shadow-2xl">
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        navigation
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
+        className="rounded-xl"
+      >
+        {data?.images.map((img, index) => (
+          <SwiperSlide key={index}>
+            <img
+              src={img}
+              alt={`Project Screenshot ${index + 1}`}
+              className="w-full h-[400px] md:h-[80vh] object-cover"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+
+    {/* Project Info */}
+    <div className="space-y-8">
+      <div>
+        <h2 className="text-4xl font-extrabold text-white mb-2">{data.title}</h2>
+        <p className="text-gray-300 text-lg">{data.description}</p>
+      </div>
+
+      {/* Features */}
+      <div>
+        <h3 className="text-2xl font-semibold mb-2">🚀 Features</h3>
+        <ul className="list-disc list-inside space-y-1 text-gray-400">
+          {data.features.map((feature, index) => (
+            <li key={index}>{feature}</li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Tech Stack */}
+      <div>
+        <h3 className="text-2xl font-semibold mb-2">🛠️ Tech Stack</h3>
+        <div className="flex flex-wrap gap-2">
+          {data.techStack.map((tech, index) => (
+            <span
+              key={index}
+              className="bg-blue-700 text-white px-3 py-1 rounded-full text-sm"
             >
-              {data?.images.map((img, index) => (
-                <SwiperSlide key={index}>
-                  <img
-                    src={img}
-                    alt={`Slide ${index + 1}`}
-                    className="w-full h-[400px] md:h-[80vh] object-cover rounded-2xl"
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-
-          {/* Text Content */}
-          <div className="space-y-2 mt-10 ">
-            <h2 className="text-3xl font-bold">{data.title}</h2>
-            <p className="text-gray-600">{data.description}</p>
-
-            <div>
-              <h4 className="font-semibold text-lg">Features:</h4>
-              <div className="list-disc list-inside text-gray-500">
-                {data.features.map((item,index) => (
-                  <p className="">{index} . {item}</p>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h4 className="font-semibold text-lg">Tech Stack:</h4>
-              <div className="list-disc list-inside text-gray-500">
-                {data.techStack.map((item) => (
-                  <span className="text-blue-600">{item} , </span>
-                ))}
-              </div>
-            </div>
-{/* buttons */}
-<div className="flex flex-wrap gap-3 mt-6">
-  <Link
-    to={data.links.live}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-800 transition text-sm sm:text-base"
-  >
-    Live Site
-  </Link>
-  <Link
-    to={data.links.client}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-800 transition text-sm sm:text-base"
-  >
-    GitHub Client Code
-  </Link>
-  <Link
-    to={data.links.server}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-800 transition text-sm sm:text-base"
-  >
-    GitHub Server Code
-  </Link>
-</div>
-
-          </div>
+              {tech}
+            </span>
+          ))}
         </div>
       </div>
+
+      {/* Action Buttons */}
+      <div className="flex flex-wrap gap-4 mt-6">
+        <Link
+          to={data.links.live}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-2 bg-green-600 hover:bg-green-700 transition rounded-lg text-white font-medium text-sm sm:text-base"
+        >
+          🌐 Live Site
+        </Link>
+        <Link
+          to={data.links.client}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-2 bg-gray-800 hover:bg-gray-700 transition rounded-lg text-white font-medium text-sm sm:text-base"
+        >
+          🧩 GitHub Client
+        </Link>
+        <Link
+          to={data.links.server}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-2 bg-gray-800 hover:bg-gray-700 transition rounded-lg text-white font-medium text-sm sm:text-base"
+        >
+          🔧 GitHub Server
+        </Link>
+      </div>
+    </div>
+  </div>
+</div>
+
     </div>
   );
 };
