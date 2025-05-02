@@ -25,9 +25,9 @@ const ProjectCard = ({ data }) => {
         />
 
         {/* Hover Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-6 py-4 space-y-1 text-gray-400">
+        <div className="absolute inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-6 py-4 space-y-2 text-gray-400">
           <h1 className="text-lg sm:text-xl font-bold text-center">{data.description}</h1>
-          <Link to={"/project-details"}>
+          <Link to={`/project-details/${data.id}`}>
             <Button className="text-white bg-blue-600 text-base sm:text-lg hover:scale-105 transition-transform duration-300">
               View Project
             </Button>
