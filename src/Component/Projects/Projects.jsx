@@ -129,28 +129,31 @@ const Projects = () => {
       className="bg-gradient-to-b from-gray-800 via-black to-black w-full   text-white px-3 md:px-6 xl:px-0 "
     >
       <div className="max-w-6xl mx-auto h-full  py-16 " id="projects">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold inline border-b-4  ">
-          Projects
-        </h1>
+      <div className="text-center mb-12">
+          <h2 className="text-4xl xl:text-5xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-sm">
+            Projects
+          </h2>
+          <div className="mt-2 w-24 h-1 mx-auto bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full shadow-md"></div>
+        </div>
 
         <div>
           <Tabs defaultValue="all" className="  w-full">
             <TabsList className="md:grid w-full max-w-[600px] mx-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-10 bg-black text-gray-400 gap-2 px-2">
               <TabsTrigger
                 value="all"
-                className="data-[state=active]:bg-blue-500 data-[state=active]:text-white transition text-center py-2"
+                className="data-[state=active]:bg-blue-600 data-[state=active]:text-white transition text-center py-2"
               >
                 All
               </TabsTrigger>
               <TabsTrigger
                 value="react"
-                className="data-[state=active]:bg-blue-500 data-[state=active]:text-white transition text-center py-2"
+                className="data-[state=active]:bg-blue-600 data-[state=active]:text-white transition text-center py-2"
               >
                 React.js
               </TabsTrigger>
               <TabsTrigger
                 value="next"
-                className="data-[state=active]:bg-blue-500 data-[state=active]:text-white transition text-center py-2"
+                className="data-[state=active]:bg-blue-600 data-[state=active]:text-white transition text-center py-2"
               >
                 Next.js
               </TabsTrigger>
@@ -158,7 +161,7 @@ const Projects = () => {
 
             <TabsContent
               value="all"
-              className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-16 "
+              className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 md:gap-14 "
             >
               {/* project */}
               {/* <div className=" md:flex gap-5 justify-between items-center w-full md:h-[450px] px-6 rounded py-4 md:py-0 hover:bg-slate-900 hover:cursor-pointer shadow-md  shadow-blue-500">

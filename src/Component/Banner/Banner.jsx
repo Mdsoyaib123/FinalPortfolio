@@ -11,7 +11,7 @@ const Banner = () => {
   return (
     <div
       id="Hero"
-      className="h-full md:h-screen  bg-gradient-to-b from-black via-black to-gray-800 px-3 md:px-0 "
+      className="h-full md:h-screen  bg-gradient-to-b from-black via-black to-gray-800 px-3 md:px-0  pt-4 md:pt-0"
       
     >
       <div className="flex flex-col-reverse  justify-between items-center max-w-6xl mx-auto h-full   md:flex-row  ">
@@ -36,7 +36,7 @@ const Banner = () => {
               ></IoLogoGithub>
             </a>
           </div>
-          <div className="space-y-8">
+          <div className="space-y-3 md:space-y-6">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold"> Hi , I am Soyaib Hossain </h1>
             <h2 className="flex items-center gap-2 text-xl md:text-2xl lg:text-3xl   font-bold">
               I'm a_{" "}
@@ -44,10 +44,16 @@ const Banner = () => {
                 <Typewriter
                   onInit={(typewriter) => {
                     typewriter
+                      .typeString("Mern Stack Developer ")
+                      .pauseFor(500)
+                      .deleteAll()
                       .typeString("Font End Developer ")
                       .pauseFor(500)
                       .deleteAll()
-                      .typeString("React Developer")
+                      .typeString("Next js Developer")
+                      .pauseFor(500)
+                      .deleteAll()
+                      .typeString("React js Developer")
                       .pauseFor(500)
                       .deleteAll()
                       .typeString("Full Stack Developer")
@@ -60,8 +66,8 @@ const Banner = () => {
             Motivated and Enthusiastic Web Developer. <br></br>
               Seeking Opportunities to Grow and Learn.
             </p>
-            <div className="flex  gap-5">
-              <NavHashLink to='/#Contact' smooth duration={500}  className="group flex items-center gap-2 w-fit px-6 py-3 my-2 rounded-md bg-gradient-to-t from-cyan-500 to-blue-500 cursor-pointer">
+            <div className="flex justify-center md:block gap-5">
+              <NavHashLink to='/#Contact' smooth duration={500}  className="group flex items-center gap-2 w-fit px-6 py-3 my-2 rounded-md bg-blue-600 cursor-pointer">
                 Contact{""}
                 <span className="group-hover:rotate-90 duration-300">
                   <FaArrowRightLong></FaArrowRightLong>
