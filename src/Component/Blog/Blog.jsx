@@ -10,7 +10,7 @@ const Blog = () => {
     {/* Title */}
     <div className="text-center mb-12">
       <h2 className="text-3xl xl:text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-md">
-        Blog Postss
+        Blog Posts
       </h2>
       <div className="mt-2 w-24 h-1 mx-auto bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full shadow-lg"></div>
     </div>
@@ -39,12 +39,12 @@ const Blog = () => {
             <p className="mt-4 text-gray-400 text-sm">
               {blog.description.slice(0, 100)}...
             </p>
-            <a
-              href={`blog-details/${blog.id}`}
+            <Link
+              to={`/blog-details/${blog.id}`}
               className="inline-block mt-4 text-blue-600 font-semibold hover:underline"
             >
               Read more →
-            </a>
+            </Link>
           </div>
         </div>
       ))}

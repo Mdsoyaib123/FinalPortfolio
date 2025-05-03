@@ -2,7 +2,7 @@ import './Footer.css'
 const Footer = () => {
 
     return (
-        <div className='bg-black bg-opacity-90 backdrop-blur-lg text-white shadow'>
+        <div className=' bg-black bg-opacity-90 backdrop-blur-md text-white shadow'>
             <div name='' className="hidden py-4 pt-20 px-6 max-w-6xl mx-auto md:flex justify-between">
             <div  className="flex gap-5 items-center version pb-6 md:pb-0 ">
                 <div>

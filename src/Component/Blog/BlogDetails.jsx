@@ -29,7 +29,7 @@ const BlogDetails = () => {
           <img
             src={blog.image}
             alt="Blog"
-            className="w-full rounded-xl mb-8 shadow-lg"
+            className="w-full md:h-screen rounded-xl mb-8 shadow-lg"
           />
 
           {/* Content */}

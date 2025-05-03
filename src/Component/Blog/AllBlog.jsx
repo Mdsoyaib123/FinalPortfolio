@@ -2,12 +2,13 @@ import React from 'react'
 import { blogData } from './blogData'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
+import { Link } from 'react-router-dom'
 
 const AllBlog = () => {
   return (
     <div>
         <Navbar></Navbar>
-         <div className="bg-gradient-to-b from-gray-800 via-black to-black py-10">
+         <div className="bg-gradient-to-b from-gray-800 via-black to-black py-10 px-3 md:px-6">
       
       <div className="max-w-6xl mx-auto">
         {/* Title */}
@@ -42,12 +43,12 @@ const AllBlog = () => {
                 <p className="mt-4 text-gray-400 text-sm">
                   {blog.description.slice(0, 100)}...
                 </p>
-                <a
-                  href="/blog-details"
+                <Link
+                   to={`/blog-details/${blog.id}`}
                   className="inline-block mt-4 text-blue-600 font-semibold hover:underline"
                 >
                   Read more →
-                </a>
+                </Link>
               </div>
             </div>
           ))}
