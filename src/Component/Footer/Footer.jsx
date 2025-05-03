@@ -2,12 +2,12 @@ import './Footer.css'
 const Footer = () => {
 
     return (
-        <div className='bg-gradient-to-b from-black to-black'>
+        <div className='bg-black bg-opacity-90 backdrop-blur-lg text-white shadow'>
             <div name='' className="hidden py-4 pt-20 px-6 max-w-6xl mx-auto md:flex justify-between">
             <div  className="flex gap-5 items-center version pb-6 md:pb-0 ">
                 <div>
                     <h1 className='pb-4 text-gray-400'>Version</h1>
-                    <p>2023 © Edition</p>
+                    <p>2024 © Edition</p>
                 </div>
                 <div>
                     <h1 className='pb-4 text-gray-400'>Version</h1>
@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
         </div>
         <div className='md:hidden text-center'>
-            <h1 className='py-4'>Copyright © 2023by Soyaib Hossain .</h1>
+            <h1 className='py-4'>Copyright © 2024by Soyaib Hossain .</h1>
         </div>
         </div>
     );

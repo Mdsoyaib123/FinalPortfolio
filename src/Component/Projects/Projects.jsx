@@ -126,11 +126,11 @@ const Projects = () => {
   return (
     <div
       id="Projects"
-      className="bg-gradient-to-b from-gray-800 via-black to-black w-full   text-white px-3 md:px-6 xl:px-0 "
+      className=" bg-gradient-to-b from-black via-black to-gray-800  w-full   text-white px-3 md:px-6 xl:px-0 "
     >
       <div className="max-w-6xl mx-auto h-full  py-16 " id="projects">
       <div className="text-center mb-12">
-          <h2 className="text-4xl xl:text-5xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-sm">
+          <h2 className="text-3xl xl:text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-sm">
             Projects
           </h2>
           <div className="mt-2 w-24 h-1 mx-auto bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full shadow-md"></div>
@@ -138,7 +138,7 @@ const Projects = () => {
 
         <div>
           <Tabs defaultValue="all" className="  w-full">
-            <TabsList className="md:grid w-full max-w-[600px] mx-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-10 bg-black text-gray-400 gap-2 px-2">
+            <TabsList className="md:grid w-full max-w-[600px] mx-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-10 bg-gray-800 text-gray-400 gap-2 px-2">
               <TabsTrigger
                 value="all"
                 className="data-[state=active]:bg-blue-600 data-[state=active]:text-white transition text-center py-2"

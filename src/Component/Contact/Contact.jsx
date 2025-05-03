@@ -30,13 +30,13 @@ const Contact = () => {
   return (
     <div
     id="Contact"
-    className="bg-gradient-to-b from-black via-gray-900 to-gray-800 w-full text-white py-16 px-4 xl:px-0"
+    className="bg-gradient-to-b from-black via-black to-gray-800  w-full text-white py-16 px-4 xl:px-0"
   >
     <Toaster />
     <div className="max-w-6xl mx-auto">
       {/* Section Title */}
       <div className="text-center mb-12">
-          <h2 className="text-4xl xl:text-5xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-sm">
+          <h2 className="text-3xl xl:text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-sm">
             Contact
           </h2>
           <div className="mt-2 w-24 h-1 mx-auto bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full shadow-md"></div>

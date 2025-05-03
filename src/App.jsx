@@ -6,16 +6,18 @@ import Footer from "./Component/Footer/Footer";
 import Navbar from "./Component/Navbar/Navbar";
 import Projects from "./Component/Projects/Projects";
 import Skills from "./Component/Skills/Skills";
+import Blog from './Component/Blog/Blog';
 
 const App = () => {
   return (
     <div className="text-white">
-      <Navbar></Navbar> 
+      <Navbar></Navbar>
       <Banner></Banner>
       <About></About>
+      <Education></Education>
       <Skills></Skills>
       <Projects></Projects>
-      <Education></Education>
+      <Blog></Blog>
       <Contact></Contact>
       <Footer></Footer>
     </div>

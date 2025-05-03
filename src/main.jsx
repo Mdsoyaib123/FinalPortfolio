@@ -6,6 +6,8 @@ import toast, { Toaster } from "react-hot-toast";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ProjectDetails from "./Component/projectDetails/ProjectDetails.jsx";
+import AllBlog from "./Component/Blog/AllBlog.jsx";
+import BlogDetails from "./Component/Blog/BlogDetails.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,6 +16,14 @@ const router = createBrowserRouter([
   {
     path: "/project-details/:id",
     element: <ProjectDetails></ProjectDetails>,
+  },
+  {
+    path: "/all-blogs",
+    element: <AllBlog></AllBlog>,
+  },
+  {
+    path: "/blog-details/:id",
+    element: <BlogDetails></BlogDetails>,
   },
 ]);
 

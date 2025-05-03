@@ -5,15 +5,14 @@ const Skills = () => {
       skills: [
         {
           name: "Next Js",
-          image:
-            "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
+          image: "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
         },
         {
           name: "React Js",
           image:
             "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
         },
-        
+
         {
           name: "Typescript",
           image:
@@ -26,15 +25,14 @@ const Skills = () => {
         },
         {
           name: "Redux-Toolkit",
-          image:
-            "https://cdn.worldvectorlogo.com/logos/redux.svg",
+          image: "https://cdn.worldvectorlogo.com/logos/redux.svg",
         },
         {
           name: "Tailwind",
           image:
             "https://cdn3d.iconscout.com/3d/free/thumb/free-tailwind-3d-icon-download-in-png-blend-fbx-gltf-file-formats--html-logo-css-framework-customizable-coding-lang-pack-logos-icons-7577995.png",
         },
-        
+
         {
           name: "Material UI",
           image:
@@ -105,6 +103,11 @@ const Skills = () => {
             "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
         },
         {
+          name: "Vercel",
+          image:
+            "https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png",
+        },
+        {
           name: "VS Code",
           image:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
@@ -125,12 +128,12 @@ const Skills = () => {
   return (
     <div
       id="Skill"
-      className="bg-gradient-to-b from-black via-gray-900 to-gray-800 text-white pb-16 px-4 xl:px-0"
+      className=" bg-gradient-to-b from-gray-800 via-black to-black  text-white pb-16 px-4 xl:px-0"
     >
       <div className="max-w-6xl mx-auto">
         {/* Title */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl xl:text-5xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-sm">
+          <h2 className="text-3xl xl:text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-sm">
             My Skills
           </h2>
           <div className="mt-2 w-24 h-1 mx-auto bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full shadow-md"></div>

@@ -15,24 +15,28 @@ const Navbar = () => {
     },
     {
       id: 3,
-      link: "Skill",
+      link: "Education",
     },
     {
       id: 4,
-      link: "Projects",
+      link: "Skill",
     },
-    // {
-    //   id: 5,
-    //   link: "Education ",
-    // },
     {
       id: 5,
+      link: "Projects",
+    },
+    {
+      id: 6,
+      link: "Blogs",
+    },
+    {
+      id: 7,
       link: "Contact",
     },
   ];
 
   return (
-    <div className="sticky top-0 z-50 bg-black bg-opacity-80 backdrop-blur-md text-white shadow">
+    <div className="sticky top-0 z-50 bg-black bg-opacity-90 backdrop-blur-md text-white shadow">
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
       {/* Left: Logo */}
