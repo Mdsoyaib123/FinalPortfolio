@@ -68,7 +68,7 @@ const Navbar = () => {
       {/* Right: Resume Button */}
       <div className="flex-1 hidden lg:flex justify-end">
         <a
-          href="https://drive.google.com/file/d/1_RLQiOVoJBEQaJC_ok_Ih7J1_ubtz9yT/view?usp=sharing"
+          href="https://drive.google.com/file/d/1YwEMvXNMsdNtWnZa6BcalbO8GAXMZwh2/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -103,7 +103,7 @@ const Navbar = () => {
           </NavHashLink>
         ))}
         <a
-          href="https://drive.google.com/file/d/1_RLQiOVoJBEQaJC_ok_Ih7J1_ubtz9yT/view?usp=sharing"
+          href="https://drive.google.com/file/d/1YwEMvXNMsdNtWnZa6BcalbO8GAXMZwh2/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
