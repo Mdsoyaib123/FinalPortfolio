@@ -15,37 +15,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ProjectCard from "./ProjectCard";
 
 export const projectsData = [
+  
   {
     id: 1,
-    title: "Sofiya Hotel",
-    subtitle: "Modern Hotel Booking Made Easy",
-    description:
-      "A full-stack Hotel Booking platform where users can browse available rooms, book their stay, and manage their reservations. Admins can manage rooms, bookings, and user accounts.",
-    techStack: [
-      "React",
-      "React Router",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Firebase Authentication",
-      "JWT",
-    ],
-    features: [
-      "MERN Stack-based hotel room booking system.",
-      "Users can register and log in using Firebase Authentication (including Google Sign-In).",
-      "Admins can manage room listings and monitor bookings.",
-      "Protected routes for secure dashboard access.",
-    ],
-    links: {
-      live: "https://the-hotel-room.web.app",
-      client: "https://github.com/Mdsoyaib123/Sofiya-Hotel",
-      server: "https://github.com/Mdsoyaib123/Sofiya-Hotel-Server",
-    },
-    images: [Sofiya1, Sofiya2],
-  },
-  {
-    id: 2,
     title: "TutorLink",
     subtitle: "Find the Right Tutor. Anytime. Anywhere",
     description:
@@ -80,7 +52,7 @@ export const projectsData = [
     images: [tutorLink4, tutorLink1, tutorLink2, tutorLink3],
   },
   {
-    id: 3,
+    id: 2,
     title: "Book Shop",
     subtitle: "Online Bookstore for Every Genre",
     description:
@@ -112,8 +84,36 @@ export const projectsData = [
     },
     images: [bookShop4, bookShop1, bookShop2, bookShop3],
   },
+  {
+    id: 3,
+    title: "Sofiya Hotel",
+    subtitle: "Modern Hotel Booking Made Easy",
+    description:
+      "A full-stack Hotel Booking platform where users can browse available rooms, book their stay, and manage their reservations. Admins can manage rooms, bookings, and user accounts.",
+    techStack: [
+      "React",
+      "React Router",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Firebase Authentication",
+      "JWT",
+    ],
+    features: [
+      "MERN Stack-based hotel room booking system.",
+      "Users can register and log in using Firebase Authentication (including Google Sign-In).",
+      "Admins can manage room listings and monitor bookings.",
+      "Protected routes for secure dashboard access.",
+    ],
+    links: {
+      live: "https://the-hotel-room.web.app",
+      client: "https://github.com/Mdsoyaib123/Sofiya-Hotel",
+      server: "https://github.com/Mdsoyaib123/Sofiya-Hotel-Server",
+    },
+    images: [Sofiya1, Sofiya2],
+  },
 ];
-
 
 const reactProject = projectsData.filter(
   (item) => item.techStack[0] === "React"
@@ -129,7 +129,7 @@ const Projects = () => {
       className=" bg-gradient-to-b from-black via-black to-gray-800  w-full   text-white px-3 md:px-6 xl:px-0 "
     >
       <div className="max-w-6xl mx-auto h-full  py-16 " id="projects">
-      <div className="text-center mb-12">
+        <div className="text-center mb-12">
           <h2 className="text-3xl xl:text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-sm">
             Projects
           </h2>
@@ -161,7 +161,7 @@ const Projects = () => {
 
             <TabsContent
               value="all"
-              className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 md:gap-14 "
+              className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 "
             >
               {/* project */}
               {/* <div className=" md:flex gap-5 justify-between items-center w-full md:h-[450px] px-6 rounded py-4 md:py-0 hover:bg-slate-900 hover:cursor-pointer shadow-md  shadow-blue-500">
